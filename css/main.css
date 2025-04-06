@@ -343,7 +343,7 @@ color: var(--primary-color);
    width: 100%;
     background-color: var(--main-background);
     z-index: 1;
-    box-shadow: -0.3rem 0.8rem 0.8rem var(--primary-color);
+    box-shadow: 0.3rem 0.8rem 0.8rem var(--primary-color);
 }
 .sticky .Home{
 margin-top:10rem;
