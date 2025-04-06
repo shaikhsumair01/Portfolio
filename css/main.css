@@ -337,6 +337,7 @@ color: var(--primary-color);
 .sticky header{
     position: fixed;
     top:0;
+    left:-5%;
     padding-top:0;
     padding-bottom:0;
    width: 100%;
