@@ -158,6 +158,9 @@
     .Hero-text{
         align-items: center;
     }
+    .Hero-image{
+        height: 40vh;
+    }
     .About, .Project-container, .Form{
        display:flex;
        flex-direction:column;
