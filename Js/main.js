@@ -47,7 +47,6 @@ const root = document.documentElement;
 const Home = document.querySelector('.Home');
 const observer = new IntersectionObserver(function(entries)
 {const ent = entries[0];
-    console.log(ent);
     if(ent.isIntersecting === false){
         document.body.classList.add('sticky');
     }
@@ -64,7 +63,6 @@ observer.observe(Home);
 // Mobile-navigation
 const btnNav = document.querySelector('.mobile-nav-button');
 const Header = document.querySelector('header');
-console.log(Header);
 btnNav.addEventListener('click', function(){
     Header.classList.toggle('nav-open');})
 
