@@ -114,6 +114,10 @@
 @media(max-width:600px){
     header{
         gap:1rem;
+        
+    }
+    .sticky header{
+         left:-10%;
     }
     .logo{
         height:3rem;
@@ -172,7 +176,14 @@
     }
     .Certificate-card{
         width:100%;
+         height:100vh;
     }
+     .Project{
+        width:100vw;
+       }
+       .Project-image{
+        height:40vh;
+       }
    .progress-item{
     flex-direction:column;
    }
