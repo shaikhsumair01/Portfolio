@@ -83,7 +83,7 @@ body{
     overflow-x:hidden;
 }
 
-header,section{
+section{
     margin: 0rem 3rem 12rem;
 }
 header{
@@ -128,19 +128,8 @@ span{
 .hidden-text{
     color: var(--text);
 }
-.progress-text{
-    font-weight:bold;
-   }
-/* Progress-number: progress bar value */
-.progress-number{
-    font-size: 1.8rem;
-    font-weight: 700;
-    position: absolute;
-    color: var(--num);
-    top:50%;
-    right:5%;
-    transform: translateY(-50%);
-}
+
+
 
 /*       *-*       */
 /* Button-styling */
@@ -265,8 +254,8 @@ align-items: center;
 }
 .toggle-button:after{
     content:"";
-    width: 3rem;
-    height:3rem;
+    width: 2.5rem;
+    height:2.5rem;
     position: absolute;
     top:0.5rem;
     left:0.5rem;
@@ -337,13 +326,12 @@ color: var(--primary-color);
 .sticky header{
     position: fixed;
     top:0;
-    left:-5%;
     padding-top:0;
     padding-bottom:0;
    width: 100%;
     background-color: var(--main-background);
     z-index: 1;
-    box-shadow: 0.3rem 0.8rem 0.8rem var(--primary-color);
+    box-shadow: -0.3rem 0.8rem 0.8rem var(--primary-color);
 }
 .sticky .Home{
 margin-top:10rem;
@@ -460,120 +448,18 @@ height: 100vh;
 .Skills>.Secondary-heading{
     margin-bottom: 5rem;
 }
-/* Progress Bar arrangement */
-.progress-list{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-.progress-item{
-    display: flex;
-    justify-content: space-evenly;
-    gap:2rem;
-    align-items: center;
-}
-/* Progress Bar styling */
-.progress{
-    width: 75vw;
-    height: 2.5rem;
-    border-radius:0.5rem;
-    background-color:#fff;
-    overflow:hidden;
-    box-shadow: inset 2px 2px 2px var(--secondary-color), 1px 2px 1px #36384C;
-    position:relative;
-   
-}
-.progress_fill{
-    height:100%;
-    border-radius:0.5rem;
-    background-color: var(--primary-color);
-    box-shadow:inset -2px -2px 2px  var(--gradient-1);
-    animation: fill 2s linear;
-}
-@keyframes fill{
-    from{width:0};
-}
-.Html{
-    width:95%;
-}
-.Css{
-    width:75%;
-}
-.Bootstrap{
-    width:80%;
-}
-.Tailwind{
-    width:65%;
-}
-.Javascript{
-    width:75%;
-}
-.JQuery{
-    width: 80%;
-}
-.SQL{
-    width:55%;
-}
-.Python{
-    width:90%;
-}
-/*       *-*       */
-/* Section-Certificate */
-/*       *-*       */
-
-/* Arranging cards */
-.certificate-cards{
-    margin-top:5rem;
-    display:flex;
-    align-items:center;
-    justify-content:space-evenly;  
-}
-/* Styling cards */
-.certificate-card{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    width:25%;
-    height:100vh;
-    gap:2rem;
-    top:0;
-    overflow:hidden;
-    box-shadow: 0px 2px 3px #fff;
-    border-radius:0.5rem;
-    padding:2rem;
-    background: linear-gradient(180deg,  var(--gradient-1),  var(--gradient-2));
-    position:relative;
-    transition: top 0.5s linear;
-}
-.certificate-card:hover{
-    top: -2rem;
-}
-.certificate-img{
-    height:50%;
+.skill-cards{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap:10rem;
+    column-gap: 30rem;
+    margin: 0 auto;
+    max-width:fit-content;
 }
 
-/* displaying skill-content (certificate)*/
-.certificate-desc{
-   display:none;
-}
-
-/* Showing certificate content (without using add-event listener) */
-/* When the button is on focus, the card will be displayed */
-.btn-web-dev:focus+.certificate-web-dev,
-.btn-Python:focus+ .certificate-Python,
-.btn-Javascript:focus + .certificate-Javascript{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    height:100%;
-    background: linear-gradient(180deg,  var(--gradient-1),  var(--gradient-2));
-    position:absolute;
-}
-.certificate-desc>.Para{
-    text-align:center;
-    line-height: 2.5rem;
-    padding: 0 0.5rem;
+.skill-card{
+    width: 15rem;
+    height:auto;
 }
 
 /*       *-*       */
