@@ -17,14 +17,7 @@
     .article-text{
         line-height: 2.2rem;
     }
-    .certificate-card{
-        height: 100vh;
-        gap:1rem;
-        padding: 2rem;
-    }
-    .certificate-img{
-        height: 40%;
-    }
+   
     .Contact{
         height: 80vh;
     }
@@ -98,13 +91,11 @@
     .btn{
         width: 50%;
     }
-    .certificate-cards{
-        flex-direction:column;
-        gap: 3rem;
-    }
-    .certificate-card{
-        width: 75%;
-    }
+    
+   .skill-cards{
+    grid-template-columns:repeat(2, 1fr);
+    column-gap:20rem;
+   }
     .footer-btn{
         width:30%;
     }
@@ -114,10 +105,6 @@
 @media(max-width:600px){
     header{
         gap:1rem;
-        
-    }
-    .sticky header{
-         left:-10%;
     }
     .logo{
         height:3rem;
@@ -158,9 +145,6 @@
     .Hero-text{
         align-items: center;
     }
-    .Hero-image{
-        height: 40vh;
-    }
     .About, .Project-container, .Form{
        display:flex;
        flex-direction:column;
@@ -177,20 +161,10 @@
     .My-description{
         margin-top:1rem;
     }
-    .Certificate-card{
-        width:100%;
-         height:auto;
+    .skill-cards{
+        display:flex;
+        flex-direction:column;
     }
-     .Project{
-        width:100vw;
-       }
-       .Project-image{
-        height:40vh;
-        width: auto;
-       }
-   .progress-item{
-    flex-direction:column;
-   }
    .Contact{
     height: auto;
 }
