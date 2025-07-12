@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />   
+<link rel="icon" href="./Images/Favicon.png">
+<title>My_Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <img src="./Images/Name_logo_light.PNG" class="logo" alt="my_logo">
+       <div class="Background-Toggle">
+        <input type="checkbox" id = "Theme-toggle" onclick="toggle()" />
+       <label for="Theme-toggle" class="toggle-button">
+        <i class="fa fa-moon toggle-icon"></i>
+        <i class="fa fa-sun toggle-icon"></i>
+        </label>
+        </div>
+        <nav>
+        <div class="main-nav">
+        <a class="nav-li" href="#home">Home</a>
+        <a class="nav-li" href="#about">About</a>
+        <a class="nav-li" href="#skills">Skills</a>
+        <a class="nav-li" href="#projects">Projects</a>
+        <a class="nav-li" href="#contact">Contact</a>
+        </div>
+        <button class="mobile-nav-button"><i class="fa-solid fa-bars mobile-nav-icon" name="bars"></i> <i class="fa-solid fa-xmark mobile-nav-icon" name="cross"></i></button>
+        </nav>
+    </header>
+
+    <section class="Home" id="home">
+    <div class = "Hero-text">
+    <h1 class="Primary-heading Heading-animation">Hi, I am <span>Sumair Shaikh.</span></h1>
+    <p class="Para">I am an Aspiring <span> Web Developer.</span></p>
+    <div class="Social-links">
+    <a class="social-btn btn-insta" href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+    <a class="social-btn btn-fb" href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a>
+    <a class="social-btn btn-linkedin" href="https://www.linkedin.com/in/sumair-shaikh-623a38247/"><i class="fa-brands fa-linkedin"></i></a>
+    <a class="social-btn btn-discord" href="https://discord.com/"><i class="fa-brands fa-discord"></i></a>
+    </div>
+    <a class="btn Resume" href="./Sumair Shaikh.pdf" download>Download-Resume</a>
+    </div>
+    <div class="Hero-image">
+        <img src="./Images/Hero-image.jpg" class="Main-image" alt = "Profile-image-1">
+    </div>
+    </section>
+
+    <section class="About" id="about">
+    <h2 class="Secondary-heading grid-2">About me</h2>
+    <aside class="Profile-2">
+    <img src="./Images/Profile-img.jpg" class="About-image" alt="Profile-image-2">
+    </aside>
+    <article class="My-description">
+    <p class="article-text Para">
+    I am an aspiring ios and web developer. I aim to create 
+    mesmerizing interfaces for my users with a lot of care.
+    I have a passion for artworks and sketches.
+    <span class="hidden-text" style="display: none;">    
+    I developed my interest in coding back in High-school, 
+    where we created different animation effects using ASP.net.
+
+    During my Summer break after my 12th boards, I had started learning the basics of Python. 
+    That inspired me to pursue my batchelors in computer applications and become a software engineer. 
+    
+    I am keen when it comes to developing new applications or learning new skills. In my free time I like to sketch, play games and even watch animated series.
+    </span>
+    </p>
+    <button onclick="More_about_me()" class="btn more-description">More about me...</button>
+    </article>
+    </section>
+
+    <section class="Skills" id="skills">
+    <h2 class="Secondary-heading">My Skills</h2>
+    <div class="skill-cards">
+        <div class="skill-card-container"><img src="./Images/HTML.png" alt="HTML" class="skill-card"></div>
+        <div class="skill-card-container"><img src="./Images/css3-logo.svg" alt="Css" class="skill-card"></div>
+        <div class="skill-card-container"><img src="./Images/Bootstrap.png" alt="Bootstrap" class="skill-card"></div>
+        <div class="skill-card-container"><img src="./Images/TailwindCss.png" alt="Tailwind" class="skill-card"></div>
+        <div class="skill-card-container"><img src="./Images/javascript-logo.svg" alt="Javascript" class="skill-card"></div>
+        <div class="skill-card-container"><img src="./Images/JQuery.png" alt="JQuery" class="skill-card"></div>
+        <div class="skill-card-container"><img src="./Images/React.jpg" alt="React" class="skill-card"></div>
+        <div class="skill-card-container"><img src="./Images/Node.js_logo.svg" alt="Node" class="skill-card"></div>
+        <div class="skill-card-container"><img src="./Images/Python-Logo.jpg" alt="Python" class="skill-card"></div>
+    </div>
+    </section>
+
+   
+    <section class="Projects" id="projects">
+    <h2 class="Secondary-heading">My Projects</h2>
+    <div class="Project-container">
+        <div class="Project-block">
+        <img src="./Images/Project-1.png" class="Project-image" alt="Project-1">
+        <a class="btn Project-btn" href="https://github.com/shaikhsumair01">Omnifood - An online food delivery App</a>
+        
+        </div>
+        <div class="Project-block">
+        <img src="./Images/Project-2.png" class="Project-image" alt="Project-2">
+        <a class="btn Project-btn" href="https://github.com/shaikhsumair01">Lisbon's chair store - Online furniture store</a>
+        </div>
+        <div class="Project-block">
+        <img src="./Images/Project-3.png" class="Project-image" alt="Project-3">
+        <a class="btn Project-btn Project-Para" href="https://github.com/shaikhsumair01">Move it - A moving start-up website</a>
+        </div>
+        <div class="Project-block">
+        <img src="./Images/Project-4.png" class="Project-image" alt="Project-4">
+        <a class="btn Project-btn Project-Para" href="https://github.com/shaikhsumair01">Bankist - An online banking application</a>
+        </div>
+        <div class="Project-block">
+        <img src="./Images/Project-5.png" class="Project-image" alt="Project-5">
+        <a class="btn Project-btn Project-Para" href="https://github.com/shaikhsumair01">Tin-dog - A tinder app clone for animals</a>
+        </div>
+        <div class="Project-block">
+        <img src="./Images/Project-6.png" class="Project-image" alt="Project-6">
+        <a class="btn Project-btn Project-Para" href="https://github.com/shaikhsumair01">Grab it - An online fast food service app</a>
+        </div>
+    </div>
+    </section>
+    <section class="Contact" id="contact">
+    <h2 class="Secondary-heading">Contact Me</h2>
+    <form action="" target="_blank" class="Form">
+      <input type="text" id="fname" class="Contact-details" placeholder="First Name">
+      <input type="text" id="lname" class="Contact-details" placeholder="Last Name">
+      <input type="Email" id="Email" class="Contact-details" placeholder="Email Address">
+      <input type="Number" id="Number" class="Contact-details" placeholder="Mobile Number">
+        <textarea class="Contact-details details_text" placeholder="Your message"></textarea>
+        <input type="submit" class="btn">
+      </form> 
+      
+    </section>
+    <footer>
+        <p class="Para">@2025 Sumair. All rights reserved</p>
+            <a class="footer-btn" href=""> Contact Me</a>
+            <a class="footer-btn" href="mailto:shaikhsumair210@gmail.com"> Email Me</a>
+    </footer>
+
+<script src="./Js/main.js"></script>   
+</body>
+</html>
