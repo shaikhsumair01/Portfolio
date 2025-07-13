@@ -239,6 +239,7 @@ align-items: center;
 .logo{
     height: 5rem;
     width:auto;
+    transform:scale(0.75);
 }
 
 /* Toggle-button (for light theme)*/

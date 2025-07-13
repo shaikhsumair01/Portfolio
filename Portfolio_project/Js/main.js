@@ -30,6 +30,7 @@ const root = document.documentElement;
         root.style.setProperty('--gradient-1', '#36384C');
         root.style.setProperty('--gradient-2', '#030416');
         logo.src = "./Images/Name_logo_dark.png";
+        logo.style.transform = "scale(0.9)"
         
     }
         else{
@@ -40,6 +41,8 @@ const root = document.documentElement;
         root.style.setProperty('--gradient-1', '#fff');
         root.style.setProperty('--gradient-2', '#b2d8d8');
         logo.src = "./Images/Name_logo_light.PNG";
+        logo.style.transform = "scale(0.75)"
+        
     }
 }
 //  Sticky-navigation:
