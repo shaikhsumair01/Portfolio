@@ -19,3 +19,7 @@ Includes a dynamic contact form for reaching out directly from the site.
 - Clone or download this repository
 - Open index.html in your browser
 - Explore each section and enjoy the interactions!
+# Update:
+-Deployed the project on Vercel.
+-Link: https://sumairshaikh.vercel.app/
+ 
