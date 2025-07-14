@@ -94,6 +94,7 @@
     .Project-container{
         display: flex;
         flex-direction:column;
+       
     }
     .Project-image{
         height: 40vh;
@@ -175,8 +176,7 @@
         margin-top:1rem;
     }
     .skill-cards{
-        display:flex;
-        flex-direction:column;
+    column-gap: 10rem;
     }
    .Contact{
     height: auto;
